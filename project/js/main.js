@@ -6,7 +6,7 @@ function handleSignIn() {
     var token = result.credential.accessToken;
     // The signed-in user info.
     var user = result.user;
-    console.log(user.email);
+   // ...
   }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
@@ -17,4 +17,10 @@ function handleSignIn() {
     var credential = error.credential;
     // ...
   });
+}
+
+function handleMessageFormSubmit(){
+  var postTitle = $("#post-title").val();
+  var postBody = $("#post-body").val();
+}
 }
